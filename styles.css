@@ -1,0 +1,142 @@
+body{
+    font-family: "Poppins", "sans-serif";
+    font-size: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:576px){
+    .container{
+        width:540px;
+
+    }
+}
+@media (min-width:768px) {
+    .container{
+        width:720px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 960px;
+    }
+    
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1180px;
+    }
+    
+}
+@media (min-width:1440px) {
+    .container{
+        width: 1320px;
+    }
+    
+}
+
+header{
+    padding-top: 70px;
+    text-align: center;
+    line-height: 1.4;
+}
+h1{
+    font-size: 30px;
+    font-weight: 200;
+    color:hsl(212, 6%, 44%);
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    color:hsl(234, 12%, 34%);
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+p{
+    color:hsl(234, 12%, 34%);
+    font-size: 15px;
+    font-weight: 300;
+    width:100%;
+    margin:0, auto;
+}
+
+.cards{
+    margin-top: 70px;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 29px 25px;
+    width:100%;
+    max-width:352px;
+    margin:0 auto 25px auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px    hsl(212, 6%, 44%)  ;
+    border-top:2px solid transparent;
+}
+.card:nth-last-of-type(1){
+    border-color:hsl(180, 62%, 55%) ;
+}
+.card:nth-last-of-type(2){
+    border-color: hsl(0, 78%, 62%);
+}
+.card:nth-last-of-type(3){
+    border-color: hsl(34, 97%, 64%);
+}
+.card:nth-last-of-type(4){
+    border-color: hsl(212, 86%, 64%);
+}
+h3{
+    color:hsl(234, 12%, 34%);
+    
+
+}
+.card p{
+    color:hsl(212, 6%, 44%);
+    font-weight: 200;
+    font-size: 15px;
+     line-height: 1.8;
+    letter-spacing: .5px;
+    margin: 12px 0 36px 0;
+}
+img{
+    display: block;
+    margin-left: auto;
+}
+
+
+@media (min-width:768px) {
+    .cards{
+        display:grid;
+        grid-template-columns: repeat(2, 352px);
+        column-gap: 25px;
+        justify-content: center;
+    }
+}
+
+@media (min-width:1200px) {
+    .cards{
+        margin-top: 50px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap:0;
+    }
+    .card{
+        margin-left: 25px;
+        margin-right: 0;
+    }
+
+   .down{
+        transform: translateY(50%);
+    }
+}
